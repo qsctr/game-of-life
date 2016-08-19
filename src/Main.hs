@@ -7,8 +7,7 @@ import Graphics.Gloss
 import Graphics.Gloss.Data.ViewPort
 import Graphics.Gloss.Interface.Pure.Game
 
-type Cell = (Int, Int)
-data World = World { cells :: [Cell], playing :: Bool, viewPort :: ViewPort }
+data World = World { cells :: [(Int, Int)], playing :: Bool, viewPort :: ViewPort }
 
 main :: IO ()
 main = do
